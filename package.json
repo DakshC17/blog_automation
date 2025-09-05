@@ -1,5 +1,13 @@
 {
-  "dependencies": {
-    "dotenv": "^17.2.2"
-  }
+  "name": "blog-scheduler",
+  "version": "1.0.0",
+  "description": "Blog scheduling dashboard",
+  "scripts": {
+    "build": "envsubst < config.js.template > config.js && echo 'Config generated from template'",
+    "build:dev": "cp config.local.js config.js && echo 'Using local config for development'",
+    "start": "python3 -m http.server 5500",
+    "dev": "npm run build:dev && npm start"
+  },
+  "keywords": ["blog", "scheduler", "google-sheets"],
+  "author": "Daksh Chodhary"
 }
