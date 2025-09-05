@@ -1,0 +1,12 @@
+python -m http.server 5500
+
+
+"this command will run the dahsboard"
+
+
+will connect with the original dahsboard 
+
+1.first make the workflows active
+2.data gets into the sheets
+3. on new rows added the main workflow gets started
+4. after waiting 2 to 3 minutes blog site will be published
